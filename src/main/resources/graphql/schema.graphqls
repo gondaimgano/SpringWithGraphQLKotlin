@@ -19,4 +19,5 @@ type Blog{
   id:ID!
   username:String!
   password:String!
+  comment:String
 }
