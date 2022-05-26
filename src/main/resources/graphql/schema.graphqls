@@ -1,0 +1,22 @@
+type Query {
+  findAll: [Blog]
+    findById(id:ID):Blog
+  findAllByPage(page:Int,size:Int):[Blog]
+}
+
+type Mutation{
+  addPost(blog:BlogInput):Blog
+}
+
+
+input BlogInput{
+  username:String!
+  password:String!
+  comment:String!
+}
+
+type Blog{
+  id:ID!
+  username:String!
+  password:String!
+}
